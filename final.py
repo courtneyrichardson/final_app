@@ -23,6 +23,5 @@ def results():
     results = g.search(terms)
     return render_template('results.html', header=header, results=results, terms=terms)
 
-
 port = int(os.environ.get("PORT", 5000))
 app.run(host="0.0.0.0", port=port)
